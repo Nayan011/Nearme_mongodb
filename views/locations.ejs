@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title> Locations</title>
+  </head>
+  <body>
+  	<h3>Location list</h3>
+ <table style="width:100%">
+  <tr>
+    <th></th>
+    
+  </tr>
+  <% locations.forEach( function( loc ){ %>
+  <tr>
+  
+    <td><%= loc.name %></td>
+    
+    <td><%= loc.category %></td>
+    
+
+  </tr>
+  <% }); %>
+</table>
+
+  </body>
+ </html>

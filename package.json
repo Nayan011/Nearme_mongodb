@@ -1,0 +1,24 @@
+{
+  "name": "labExpress",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "main": "server.js"
+  },
+  "dependencies": {
+    "@reactivex/rxjs": "^5.4.3",
+    "bcrypt-nodejs": "*",
+    "body-parser": "*",
+    "cookie-parser": "^1.4.3",
+    "debug": "*",
+    "ejs": "*",
+    "express": "*",
+    "html": "^1.0.0",
+    "latest": "*",
+    "mongoose": "^4.11.11",
+    "mongoose-geojson-schema": "^2.1.2",
+    "morgan": "*",
+    "node-fetch": "^1.7.3",
+    "serve-favicon": "*"
+  }
+}
