@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title> Locations</title>
+  </head>
+  <body>
+  	<form method="post" action="/locations/<%= loca._id %>">
+   Name: <input type="text" name="name" value="<%= loca.name %>"/><br>
+    Category:<input type="text" name="type" value="<%= loca.category %>"/><br><br>
+    <button>submit</button>
+    </form>
+
+  </body>
+ </html>
