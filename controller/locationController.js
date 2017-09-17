@@ -45,7 +45,33 @@ searchLocation:function(req,res){
   });//ends Location.findone
 
 
-}//ends searchLocation
+},//ends searchLocation
+updateLocation:function(req,res){
+  Place.findOne({_id:req.params.id},function(err,data){
+
+    let operators={$set:{"name":req.body.name,"category":req.body.category}};
+    Place.update({_id:req.params.id},operators,function(err,da){
+    console.log("update data:"+da);
+      res.redirect('/locations');
+    });
+  });//ends findone
+
+},//ends update
+
+deleteLocation:function(req,res){
+ Place.remove({_id:req.params.id},function(err,data){
+  res.redirect('/locations');
+ });//ends deleteLocation
+
+},//ends delete
+getSingleDLoc:function(req,res){
+   Place.findOne({_id:req.params.id},function(err,loca){
+      console.log(loca);
+
+      res.render('./singlePage.ejs',{loca:loca});
+    });
+
+}
 
 
 
